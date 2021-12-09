@@ -130,7 +130,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <p className="dropdown-item link-button">
-                      <a href="http://localhost:5000/oauth/logout">Logout</a>
+                      <a href="/oauth/logout">Logout</a>
                     </p>
                   </li>
                   <li>
