@@ -1,0 +1,49 @@
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.link-button {
+  color: white;
+  text-decoration: none;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.row {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.bg-gray {
+  background-color: rgb(231, 231, 231);
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
+}
