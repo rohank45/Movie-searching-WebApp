@@ -45,7 +45,9 @@ const Login = () => {
         </button>
 
         <button type="submit" className="btn btn-dark">
-          <a href="/auth/google">Sign up with Google</a>
+          <a href="https://movieapp-mern.herokuapp.com/auth/google">
+            Sign up with Google
+          </a>
         </button>
       </form>
     </div>

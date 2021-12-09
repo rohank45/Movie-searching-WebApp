@@ -130,7 +130,9 @@ const Navbar = () => {
                   </li>
                   <li>
                     <p className="dropdown-item link-button">
-                      <a href="/oauth/logout">Logout</a>
+                      <a href="https://movieapp-mern.herokuapp.com/oauth/logout">
+                        Logout
+                      </a>
                     </p>
                   </li>
                   <li>
