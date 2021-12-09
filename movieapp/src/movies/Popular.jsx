@@ -7,9 +7,7 @@ const Popular = () => {
 
   const getData = async () => {
     try {
-      const res = await axios.get(
-        "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=bc289d54b1ccc5174256ab9a3b2ee315"
-      );
+      const res = await axios.get(process.env.POPULAR_MOVIES);
 
       setMovies(res.data.results);
     } catch (error) {

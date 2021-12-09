@@ -7,9 +7,7 @@ const ScienceFiction = () => {
 
   const getData = async () => {
     try {
-      const res = await axios.get(
-        "https://api.themoviedb.org/3/discover/movie?with_genres=878&with_cast=500&sort_by=vote_average.desc&api_key=bc289d54b1ccc5174256ab9a3b2ee315"
-      );
+      const res = await axios.get(process.env.SCIENCE_FICTION_MOVIES);
 
       setMovies(res.data.results);
     } catch (error) {
