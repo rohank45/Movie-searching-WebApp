@@ -10,11 +10,11 @@ router.get(
 
 router.get(
   "/auth/google/callback",
-  passport.authenticate("google", { failureRedirect: "http://localhost:3000" }),
+  passport.authenticate("google", { failureRedirect: "/" }),
   (req, res) => {
     try {
       // res.send(req.user);
-      res.redirect("http://localhost:3000");
+      res.redirect("/");
     } catch (error) {
       console.log(error.message);
     }
@@ -33,7 +33,7 @@ router.get("/oauth/logout", (req, res) => {
   try {
     req.session = null;
     req.logout();
-    res.redirect("http://localhost:3000/");
+    res.redirect("/");
   } catch (error) {
     console.log(error.message);
   }
