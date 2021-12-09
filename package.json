@@ -4,9 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon backend/server.js",
-    "movieapp": "npm start --prefix movieapp",
-    "dev": "concurrently \"npm start\" \"npm run movieapp\""
+    "start": "node backend/server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix movieapp && npm run build --prefix movieapp"
   },
   "keywords": [],
   "author": "",
@@ -24,6 +23,7 @@
     "morgan": "^1.10.0",
     "nodemon": "^2.0.15",
     "passport": "^0.5.0",
-    "passport-google-oauth": "^2.0.0"
+    "passport-google-oauth": "^2.0.0",
+    "path": "^0.12.7"
   }
 }
