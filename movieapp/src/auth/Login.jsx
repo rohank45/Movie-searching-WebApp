@@ -44,7 +44,7 @@ const Login = () => {
           Login in
         </button>
 
-        <button type="submit" className="btn btn-primary">
+        <button type="submit" className="btn btn-dark">
           <a href="http://localhost:5000/auth/google">Sign up with Google</a>
         </button>
       </form>

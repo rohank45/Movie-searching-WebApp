@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "nodemon backend/server.js",
-    "cryptoapp": "npm start --prefix movieapp",
+    "movieapp": "npm start --prefix movieapp",
     "dev": "concurrently \"npm start\" \"npm run movieapp\""
   },
   "keywords": [],
